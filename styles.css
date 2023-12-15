@@ -1,4 +1,5 @@
 /*Colors*/
+@import "_header.scss" main;
 @font-face {
   font-family: "Montserrat";
   src: url(Fonts/Montserrat-Regular.ttf);
@@ -81,31 +82,7 @@ section .logo {
 }
 
 /*vocabulary*/
-header {
-  background-image: url(Images/Vocabulary.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-  padding: 20px;
-}
-header .title {
-  background-color: rgba(107, 8, 107, 0.9490196078);
-  border-radius: 50px;
-  width: 260px;
-  text-align: center;
-  margin: auto;
-}
-header .title h1 {
-  font-size: 30px;
-  font-family: "Princess Sofia";
-  padding: 30px;
-  font-size: 50px;
-  color: #ffffff;
-  text-shadow: 0 0 5px #000;
-  background-size: cover;
-}
-
-main .subtitle h2 {
+subtitle h2 {
   font-family: "Montserrat";
   font-size: 25px;
   text-align: center;
@@ -258,6 +235,4 @@ footer .book a {
     top: 30px;
     right: 5px;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

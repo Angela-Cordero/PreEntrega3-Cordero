@@ -69,34 +69,9 @@ section {
 }
 
 /*vocabulary*/
+@import "_header.scss"
 
-header{
-    background-image: url(Images/Vocabulary.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-    padding: 20px;
-
-    .title{
-        background-color: #6b086bf2;
-        border-radius: 50px;
-        width: 260px;
-        text-align: center;
-        margin: auto;
-    }
-
-    .title h1{
-        font-size: 30px;
-        font-family: 'Princess Sofia';
-        padding: 30px;
-        font-size: 50px;
-        color: #ffffff;
-        text-shadow: 0 0 5px #000;
-        background-size: cover;
-    }
-}
-
-main .subtitle h2{
+main ;subtitle h2{
     font-family: "Montserrat";
     font-size: 25px;
     text-align: center;
