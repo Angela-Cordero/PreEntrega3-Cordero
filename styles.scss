@@ -68,20 +68,26 @@ section {
     margin-top: 20px;
 }
 
-/*vocabulary*/
-@import "_header.scss"
+/*Grammar*/
 
-main ;subtitle h2{
+
+
+
+
+/*vocabulary*/
+@import "_header.scss";
+
+main .subtitle h2{
     font-family: "Montserrat";
     font-size: 25px;
     text-align: center;
     padding: 10px;
-    border: 10px solid #e3a42f;
+    border: 10px solid $color2;
     margin-top: -20px;
 }
 
 .vocabulary{
-    background-color: #6b086b;
+    background-color: $color1;
     height:auto;
     display:grid;
     grid-template-columns: 1fr;
@@ -91,7 +97,7 @@ main ;subtitle h2{
 }
 
 .item{
-    border: 3px solid #000;
+    border: 3px solid $color3;
     background-size: cover;
     background-position: center;
     border-radius: 30px;
@@ -100,7 +106,7 @@ main ;subtitle h2{
 }
 
 .item:hover{
-    transform: scale(0.9);
+    transform: scale(1.2);
     filter: grayscale(0%);
 }
 
@@ -145,36 +151,13 @@ main {
     display: flexbox;
 }
 
-footer{
-    background-color: #fff;
-    color:#e3a42f;
-    text-shadow: 1px 1px 0px #000;
-    font-weight: bolder;
-    text-align: center;
-    padding: 20px;
-    font-family: "Montserrat";
-    height: 50px;
-    margin-top: 10px;
-}
+@import "_footer.scss";
 
-footer .redes a{
-    color:#6b086b;
-    text-decoration: none;
-    font-size: 30px;
-}
+/*Speaking*/
+/*Reading*/
+/*Listening/
 
-footer .book a{
-    text-decoration: none;
-    background-color: #e3a42f;
-    font-family: 'Princess Sofia';
-    color: #fff;
-    float: right;
-    font-size: 20px;
-    padding: 5px 20px;
-    border-radius: 30px;
-    position: relative;
-    bottom: 50px;
-}
+
 
 /*media queries*/
 

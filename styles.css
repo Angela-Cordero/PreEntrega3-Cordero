@@ -1,5 +1,4 @@
 /*Colors*/
-@import "_header.scss" main;
 @font-face {
   font-family: "Montserrat";
   src: url(Fonts/Montserrat-Regular.ttf);
@@ -81,8 +80,34 @@ section .logo {
   margin-top: 20px;
 }
 
+/*Grammar*/
 /*vocabulary*/
-subtitle h2 {
+/*Colors*/
+header {
+  background-image: url(Images/Vocabulary.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  padding: 20px;
+}
+header .title {
+  background-color: #6b086b;
+  border-radius: 50px;
+  width: 260px;
+  text-align: center;
+  margin: auto;
+}
+header .title h1 {
+  font-size: 30px;
+  font-family: "Princess Sofia";
+  padding: 30px;
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+  background-size: cover;
+}
+
+main .subtitle h2 {
   font-family: "Montserrat";
   font-size: 25px;
   text-align: center;
@@ -111,7 +136,7 @@ subtitle h2 {
 }
 
 .item:hover {
-  transform: scale(0.9);
+  transform: scale(1.2);
   filter: grayscale(0%);
 }
 
@@ -156,6 +181,7 @@ main {
   display: flexbox;
 }
 
+/*Colors*/
 footer {
   background-color: #fff;
   color: #e3a42f;
@@ -186,6 +212,12 @@ footer .book a {
   position: relative;
   bottom: 50px;
 }
+
+/*Speaking*/
+/*Reading*/
+/*Listening/
+
+
 
 /*media queries*/
 @media only screen and (max-width: 320px) {
@@ -235,4 +267,6 @@ footer .book a {
     top: 30px;
     right: 5px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
