@@ -13,20 +13,8 @@
   box-sizing: border-box;
 }
 
-/*index*/
-section {
-  background-color: #6b086b;
-  height: 300px;
-}
-section #logo {
-  border-radius: 15px;
-}
-section .logo {
-  border: #6b086b solid 30px;
-  border-bottom: 10px;
-  text-align: center;
-}
-section nav ul li {
+/*Colors*/
+nav ul li {
   list-style: none;
   background-color: #e3a42f;
   border-radius: 10px;
@@ -39,12 +27,27 @@ section nav ul li {
   float: right;
   line-height: center;
 }
-section nav ul li:hover {
-  background-color: #000;
-}
-section nav a {
+nav ul li a {
   text-decoration: none;
   color: #fff;
+}
+
+nav ul li:hover {
+  background-color: #000;
+}
+
+/*index*/
+section {
+  background-color: #6b086b;
+  height: 300px;
+}
+section #logo {
+  border-radius: 15px;
+}
+section .logo {
+  border: #6b086b solid 30px;
+  border-bottom: 10px;
+  text-align: center;
 }
 
 #welcome {
@@ -85,16 +88,14 @@ header {
   height: 250px;
   padding: 20px;
 }
-
-.title {
+header .title {
   background-color: rgba(107, 8, 107, 0.9490196078);
   border-radius: 50px;
   width: 260px;
   text-align: center;
   margin: auto;
 }
-
-.title h1 {
+header .title h1 {
   font-size: 30px;
   font-family: "Princess Sofia";
   padding: 30px;
@@ -257,4 +258,6 @@ footer .book a {
     top: 30px;
     right: 5px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */

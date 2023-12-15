@@ -1,0 +1,28 @@
+/*Colors*/
+$color1:#6b086b;
+$color2:#e3a42f;
+$color3:#000;
+$color4:#fff;
+
+nav ul li{
+    list-style: none;
+    background-color: $color2;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    padding: 5px;
+    margin: 5px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: relative;
+    float: right;
+    line-height: center;
+
+        a{
+        text-decoration: none;
+        color: $color4;
+    }
+}
+
+nav ul li:hover{
+    background-color: $color3;
+}

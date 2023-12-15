@@ -20,6 +20,8 @@ $color4:#fff;
     box-sizing: border-box;
 }
 
+@import "_navbar";
+
 /*index*/
 section {
     background-color: $color1;
@@ -34,29 +36,6 @@ section {
         border-bottom: 10px;
         text-align: center;
     }
-
-    nav ul li{
-        list-style: none;
-        background-color: $color2;
-        border-radius: 10px;
-        font-family: 'Montserrat';
-        padding: 5px;
-        margin: 5px;
-        display: inline-flex;
-        flex-wrap: wrap;
-        position: relative;
-        float: right;
-        line-height: center;
-    }
-
-    nav ul li:hover{
-        background-color: $color3;
-    }
-    
-    nav a{
-        text-decoration: none;
-        color: $color4;
-    }
 }
 
 #welcome{
@@ -70,7 +49,7 @@ section {
 .welcome .wright{
     background-image: url(Images/sho.jpg);
     background-size: cover;
-    background-position: center;
+    background-position:center;
     height: 300px;
     width: 100%;
 }
@@ -97,24 +76,24 @@ header{
     background-position: center;
     height: 250px;
     padding: 20px;
-}
 
-.title{
-    background-color: #6b086bf2;
-    border-radius: 50px;
-    width: 260px;
-    text-align: center;
-    margin: auto;
-}
+    .title{
+        background-color: #6b086bf2;
+        border-radius: 50px;
+        width: 260px;
+        text-align: center;
+        margin: auto;
+    }
 
-.title h1{
-    font-size: 30px;
-    font-family: 'Princess Sofia';
-    padding: 30px;
-    font-size: 50px;
-    color: #ffffff;
-    text-shadow: 0 0 5px #000;
-    background-size: cover;
+    .title h1{
+        font-size: 30px;
+        font-family: 'Princess Sofia';
+        padding: 30px;
+        font-size: 50px;
+        color: #ffffff;
+        text-shadow: 0 0 5px #000;
+        background-size: cover;
+    }
 }
 
 main .subtitle h2{
