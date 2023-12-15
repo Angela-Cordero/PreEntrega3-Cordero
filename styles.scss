@@ -22,41 +22,46 @@ $color4:#fff;
 
 /*index*/
 section {
-    background-color: #6b086b;
+    background-color: $color1;
     height: 300px;
-}
 
-.logo{
-    border: #6b086b solid 30px;
-    border-bottom: 10px;
-    text-align: center;
-}
+    #logo{
+        border-radius: 15px;
+    }
 
-nav ul li{
-    list-style: none;
-    background-color: #e3a42f;
-    border-radius: 10px;
-    font-family: 'Montserrat';
-    padding: 5px;
-    margin: 5px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    position: relative;
-    float: right;
-}
+    .logo{
+        border: $color1 solid 30px;
+        border-bottom: 10px;
+        text-align: center;
+    }
 
-nav ul li:hover{
-    background-color: #000;
-}
+    nav ul li{
+        list-style: none;
+        background-color: $color2;
+        border-radius: 10px;
+        font-family: 'Montserrat';
+        padding: 5px;
+        margin: 5px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        position: relative;
+        float: right;
+        line-height: center;
+    }
 
-nav a{
-    text-decoration: none;
-    color: #fff;
+    nav ul li:hover{
+        background-color: $color3;
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: $color4;
+    }
 }
 
 #welcome{
-    background-color: #000;
-    color: #fff;
+    background-color:$color3;
+    color: $color4;
     font-family: 'Montserrat';
     padding: 20px;
     text-align: center;
@@ -74,14 +79,14 @@ nav a{
     font-family: 'Montserrat';
     padding: 20px;
     text-align: justify;
-    margin-top: -20px;
 }
 
 .welcome h2{
     font-size: 60px;
-    color: #6b086b;
+    color: $color1;
     font-family: 'Princess Sofia';
     text-align: center;
+    margin-top: 20px;
 }
 
 /*vocabulary*/
