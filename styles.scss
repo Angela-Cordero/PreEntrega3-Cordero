@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Princess Sofia';
+    src: url(Fonts/PrincessSofia-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*index*/
+section {
+    background-color: #6b086b;
+    height: 300px;
+}
+
+.logo{
+    border: #6b086b solid 30px;
+    border-bottom: 10px;
+    text-align: center;
+}
+
+nav ul li{
+    list-style: none;
+    background-color: #e3a42f;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    padding: 5px;
+    margin: 5px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: relative;
+    float: right;
+}
+
+nav ul li:hover{
+    background-color: #000;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#welcome{
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat';
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome .wright{
+    background-image: url(Images/sho.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+}
+
+.welcome p{
+    font-family: 'Montserrat';
+    padding: 20px;
+    text-align: justify;
+    margin-top: -20px;
+}
+
+.welcome h2{
+    font-size: 60px;
+    color: #6b086b;
+    font-family: 'Princess Sofia';
+    text-align: center;
+}
+
+/*vocabulary*/
+
+header{
+    background-image: url(Images/Vocabulary.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    padding: 20px;
+}
+
+.title{
+    background-color: #6b086bf2;
+    border-radius: 50px;
+    width: 260px;
+    text-align: center;
+    margin: auto;
+}
+
+.title h1{
+    font-size: 30px;
+    font-family: 'Princess Sofia';
+    padding: 30px;
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 0 0 5px #000;
+    background-size: cover;
+}
+
+main .subtitle h2{
+    font-family: "Montserrat";
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    border: 10px solid #e3a42f;
+    margin-top: -20px;
+}
+
+.vocabulary{
+    background-color: #6b086b;
+    height:auto;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    padding: 20px;
+    grid-gap: 20px;
+}
+
+.item{
+    border: 3px solid #000;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    transition: all 0.9s;
+    filter: grayscale(100%);
+}
+
+.item:hover{
+    transform: scale(0.9);
+    filter: grayscale(0%);
+}
+
+.item1{
+    background-image: url(Images/Lion.jpg);
+}
+
+.item2{
+    background-image: url(Images/Dolphin.png);
+}
+
+.item3{
+    background-image: url(Images/Eagle.jpg);
+}
+
+.item4{
+    background-image: url(Images/Monkey.jpg);
+}
+
+.item5{
+    background-image: url(Images/Elephant.jpg);
+}
+
+.item6{
+    background-image: url(Images/Giraffe.jpeg);
+    background-position: top;
+}
+
+.item7{
+    background-image: url(Images/Zebra.jpg);
+}
+
+.item8{
+    background-image: url(Images/Penguin.jpg);
+    background-position: top;
+}
+
+main {
+    margin-top: 20px;
+    font-family: "Montserrat";
+    text-align: center;
+    display: flexbox;
+}
+
+footer{
+    background-color: #fff;
+    color:#e3a42f;
+    text-shadow: 1px 1px 0px #000;
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px;
+    font-family: "Montserrat";
+    height: 50px;
+    margin-top: 10px;
+}
+
+footer .redes a{
+    color:#6b086b;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+footer .book a{
+    text-decoration: none;
+    background-color: #e3a42f;
+    font-family: 'Princess Sofia';
+    color: #fff;
+    float: right;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 30px;
+    position: relative;
+    bottom: 50px;
+}
+
+
+/*media queries*/
+
+@media only screen and (max-width: 320px){
+    nav ul li{
+        font-size: 15px;
+    }
+    footer .book a{
+        font-size: 15px;
+        padding: 15px 5px;
+        right: -10px;
+    }
+}
+
+@media only screen and (min-width: 480px){
+    .vocabulary{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,200px);
+    }  
+    nav ul li{
+        position: relative;
+        top: 20px;
+        margin: 2px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    nav ul li{
+        position: relative;
+        top: 20px;
+        margin: 6px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .vocabulary{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(2,200px);
+    }  
+    nav ul li{
+        position: relative;
+        top: 30px;
+        right: 80px;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    nav ul li{
+        position: relative;
+        top: 30px;
+        right:5px;
+    }
+}
