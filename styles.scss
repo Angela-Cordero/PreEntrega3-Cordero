@@ -70,11 +70,24 @@ section {
 
 /*Grammar*/
 .form{
-    border: solid #6b086b 5px;
-    
+    border: solid $color1 5px;
+    width: 50%;
+    margin: 10px;
+
 }
 
+.form-control{
+    border: dotted $color2;
+    padding: 10px;
+    height: 20px;
+    width: 70px;
+}
 
+.verb{
+    background-image: url(./Images/Verb.png);
+    size: cover;
+    position: center;
+}
 
 
 /*vocabulary*/
