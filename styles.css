@@ -81,6 +81,10 @@ section .logo {
 }
 
 /*Grammar*/
+.form {
+  border: solid #6b086b 5px;
+}
+
 /*vocabulary*/
 /*Colors*/
 header {
@@ -267,6 +271,4 @@ footer .book a {
     top: 30px;
     right: 5px;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
