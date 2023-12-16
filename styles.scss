@@ -84,11 +84,14 @@ section {
 }
 
 .verb{
-    background-image: url(./Images/Verb.png);
-    size: cover;
-    position: center;
+    background-position: center;
+    background-size: cover;
+    border: solid $color2 5px;
+    margin: 60px;
+        h3{
+            margin: 10px;
+        }
 }
-
 
 /*vocabulary*/
 @import "_header.scss";

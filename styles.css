@@ -95,9 +95,13 @@ section .logo {
 }
 
 .verb {
-  background-image: url(./Images/Verb.png);
-  size: cover;
-  position: center;
+  background-position: center;
+  background-size: cover;
+  border: solid #e3a42f 5px;
+  margin: 60px;
+}
+.verb h3 {
+  margin: 10px;
 }
 
 /*vocabulary*/
