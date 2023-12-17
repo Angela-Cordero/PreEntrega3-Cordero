@@ -58,17 +58,33 @@ section .logo {
   text-align: center;
 }
 
-.itemi {
-  background-color: #6b086b;
-  height: auto;
+h2 {
+  background-color: #fff;
+  color: #000;
+  font-family: "Montserrat";
+  margin-top: 30px;
+  text-align: center;
+}
+
+.classes {
   display: grid;
-  grid-template-columns: 2fr;
-  grid-template-rows: repeat(4, 10px);
+  grid-template-columns: 4fr;
+  grid-template-rows: repeat(4, 300px);
+  margin-bottom: 10px;
+  grid-gap: 10px;
+}
+.classes .itemi {
   padding: 20px;
-  grid-gap: 20px;
-  border: #000 3px;
-  margin: 50px;
+  border: #6b086b solid 10px;
+  margin: 30px;
   background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: bolder;
+  text-shadow: #000 0px 0px 5px;
+  text-align: right;
 }
 
 .itema {
@@ -93,7 +109,7 @@ section .logo {
   border: #e3a42f solid 10px;
 }
 
-.welcome .wleft {
+.welcome .wright {
   background-image: url(Images/sho.jpg);
   background-size: cover;
   background-position: center;
@@ -101,16 +117,16 @@ section .logo {
   width: 100%;
 }
 
-.welcome .wright {
+.welcome .wleft {
   padding: 20px;
   width: 100%;
 }
-.welcome .wright p {
+.welcome .wleft p {
   font-family: "Montserrat";
   text-align: justify;
   font-size: 20px;
 }
-.welcome .wright h3 {
+.welcome .wleft h3 {
   font-size: 50px;
   color: #6b086b;
   font-family: "Princess Sofia";
@@ -300,6 +316,10 @@ footer .book a {
     top: 20px;
     margin: 2px;
     font-size: 16px;
+  }
+  .classes {
+    grid-template-columns: 4fr;
+    grid-template-rows: repeat(4, 0px);
   }
   .welcome .wleft {
     width: 50%;

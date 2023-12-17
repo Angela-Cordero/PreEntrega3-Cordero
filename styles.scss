@@ -46,19 +46,36 @@ section {
     text-align: center;
 }
 
-
-.itemi {
-    background-color: $color1;
-    height: auto;
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: repeat(4, 10px);
-    padding: 20px;
-    grid-gap: 20px;
-    border: $color1 3px;
-    margin: 50px;
-    background-size: cover;
+h2{
+    background-color: $color4;
+    color: $color3;
+    font-family: 'Montserrat';
+    margin-top: 30px;
+    text-align: center;
 }
+
+.classes{
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: repeat(4, 300px);
+    margin-bottom: 10px;
+    grid-gap: 10px;
+
+    .itemi {
+        padding: 20px;
+        border: $color1 solid 10px;
+        margin: 30px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
+        color: $color4;
+        font-family: 'Montserrat';
+        font-weight: bolder;
+        text-shadow: $color3 0px 0px 5px ;
+        text-align:right;
+    }
+}
+
 
 .itema {
     background-image: url(./Images/kids.jpeg);
@@ -83,7 +100,7 @@ section {
     border: $color2 solid 10px;
 }
 
-.welcome .wleft {
+.welcome .wright {
     background-image: url(Images/sho.jpg);
     background-size: cover;
     background-position: center;
@@ -91,7 +108,7 @@ section {
     width: 100%;
 }
 
-.welcome .wright {
+.welcome .wleft {
     padding: 20px;
     width: 100%;
 
@@ -247,6 +264,10 @@ main {
         font-size: 16px;
     }
 
+    .classes{
+        grid-template-columns: 4fr;
+        grid-template-rows: repeat(4, 0px);
+    }
     .welcome .wleft {
         width: 50%;
     }
