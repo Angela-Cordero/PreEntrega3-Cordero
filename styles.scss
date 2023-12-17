@@ -20,9 +20,10 @@ $color4:#fff;
     box-sizing: border-box;
 }
 
-@import "_navbar";
 
 /*index*/
+@import "_navbar";
+
 section {
     background-color: $color1;
     height: 300px;
@@ -46,26 +47,33 @@ section {
     text-align: center;
 }
 
-.welcome .wright{
+.welcome{
+    display: flex;
+    flex-wrap: wrap;
+    border: $color2 solid 10px;
+}
+.welcome .wleft{
     background-image: url(Images/sho.jpg);
     background-size: cover;
     background-position:center;
-    height: 300px;
+    height: 600px;
     width: 100%;
 }
 
-.welcome p{
-    font-family: 'Montserrat';
+.welcome .wright{
     padding: 20px;
-    text-align: justify;
-}
-
-.welcome h2{
-    font-size: 60px;
-    color: $color1;
-    font-family: 'Princess Sofia';
-    text-align: center;
-    margin-top: 20px;
+    width: 100%;
+    p{
+        font-family: 'Montserrat';
+        text-align: justify;
+        font-size: 20px;
+    }
+    h3{
+        font-size: 50px;
+        color: $color1;
+        font-family: 'Princess Sofia';
+        text-align: center;
+    }
 }
 
 /*Grammar*/
@@ -201,6 +209,13 @@ main {
         top: 20px;
         margin: 2px;
         font-size: 16px;
+    }
+    .welcome .wleft{
+        width: 50%;
+    }
+
+    .welcome .wright{
+        width: 50%;
     }
 }
 

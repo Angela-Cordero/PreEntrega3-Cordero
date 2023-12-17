@@ -13,6 +13,7 @@
   box-sizing: border-box;
 }
 
+/*index*/
 /*Colors*/
 nav ul li {
   list-style: none;
@@ -36,7 +37,6 @@ nav ul li:hover {
   background-color: #000;
 }
 
-/*index*/
 section {
   background-color: #6b086b;
   height: 300px;
@@ -58,26 +58,34 @@ section .logo {
   text-align: center;
 }
 
-.welcome .wright {
+.welcome {
+  display: flex;
+  flex-wrap: wrap;
+  border: #e3a42f solid 10px;
+}
+
+.welcome .wleft {
   background-image: url(Images/sho.jpg);
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 600px;
   width: 100%;
 }
 
-.welcome p {
-  font-family: "Montserrat";
+.welcome .wright {
   padding: 20px;
-  text-align: justify;
+  width: 100%;
 }
-
-.welcome h2 {
-  font-size: 60px;
+.welcome .wright p {
+  font-family: "Montserrat";
+  text-align: justify;
+  font-size: 20px;
+}
+.welcome .wright h3 {
+  font-size: 50px;
   color: #6b086b;
   font-family: "Princess Sofia";
   text-align: center;
-  margin-top: 20px;
 }
 
 /*Grammar*/
@@ -263,6 +271,12 @@ footer .book a {
     top: 20px;
     margin: 2px;
     font-size: 16px;
+  }
+  .welcome .wleft {
+    width: 50%;
+  }
+  .welcome .wright {
+    width: 50%;
   }
 }
 @media only screen and (min-width: 600px) {
